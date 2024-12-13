@@ -1,0 +1,39 @@
+.hidden {
+    display: none;
+}
+body {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.bord {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 5px solid black;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#clock {
+    font-size: 44px;
+}
+#quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
